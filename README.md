@@ -13,7 +13,7 @@ Users can register, log in, and perform full CRUD operations (Create, Read, Upda
 - **EJS Templates**
   - Server-side rendering for all pages.
 - **CRUD for Blog Posts**
-  - Create, edit, delete, and view posts. 👤 **User Accounts**
+  - Create, edit, delete, and view posts.  **User Accounts**
   - Each post is linked to its author.
 ---
 
