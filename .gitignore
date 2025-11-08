@@ -1,0 +1,6 @@
+.env
+node_modules
+blogdb.db
+blogdb.db-shm
+blogdb.db-wal
+znotes.txt

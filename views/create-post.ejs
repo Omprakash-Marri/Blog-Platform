@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="/">Blog</a></h1>
+        <% if(user){ %>
+            <a href="/logout"><button>Logout</button></a>
+        <% }else{ %>
+            <a href="/login"><button>Login</button></a>
+        <% } %>
+            <a href="/about"><button>About</button></a>
+    </header>
+
+    <main>
+
+        <% if (errors && errors.length > 0) { %>
+        <%      errors.forEach(function(err) { %>
+                <p class="notice"><%= err %></p>
+        <%      }) %>
+        <% } %>
+        
+        <form action="/create-post" method="post">
+            <fieldset>
+                <legend>Create post..</legend>
+
+                <label><small>Title</small></label>
+                <input type="text" id="title" name="title" autocomplete="=off" />
+
+                <label><small>Body</small></label>
+                <textarea id="body" name="body"></textarea>
+                
+                <br />
+                <button>Save New Post</button>
+            </fieldset> 
+        </form>
+    </main>
+
+    <footer>
+        <p> &copy; 2025 Blog </p>
+    </footer>
+</body>
+</html>

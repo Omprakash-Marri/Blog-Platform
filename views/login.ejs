@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="/">Blog</a></h1>
+        <a href="/login"><button>Login</button></a>
+        <a href="/about"><button>About</button></a>
+    </header>
+
+    <main>
+
+        <% if (errors && errors.length > 0) { %>
+        <%      errors.forEach(function(err) { %>
+                <p class="notice"><%= err %></p>
+        <%      }) %>
+        <% } %>
+        
+        <form action="/login" method="post">
+            <fieldset>
+                <legend>Enter details</legend>
+                <label><small>Username:</small></label>
+                <input type="text" id="username" name="username">
+                <label><small>Password:</small></label>
+                <input type="password" id="password" name="password"><br><br>
+                <button>Submit</button>
+            </fieldset> 
+        </form>
+    </main>
+
+    <footer>
+        <p> &copy; 2025 Blog </p>
+    </footer>
+</body>
+</html>

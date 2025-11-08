@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="/">Blog</a></h1>
+        <a href="/login"><button>Login</button></a>
+        <a href="/about"><button>About</button></a>
+    </header>
+
+    <main>
+        <h1><%= post.title %></h1>
+        <article>
+            <p><small>Posted by <b><%= user.username %></b> on <%= post.createdDate %></small></p>
+            <div>
+                <p><%= post.body %></p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p> &copy; 2025 Blog </p>
+    </footer>
+</body>
+</html>
