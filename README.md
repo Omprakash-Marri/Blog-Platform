@@ -29,3 +29,24 @@ Users can register, log in, and perform full CRUD operations (Create, Read, Upda
 | **Development** | nodemon |
 
 ---
+
+## Setup
+**1. Clone the repository**
+```bash
+git clone https://github.com/Omprakash-Marri/Blog-Platform.git
+cd Blog-Platform
+```
+
+**2. Install dependencies**
+```bash
+npm install
+```
+
+**3. Create .env**
+
+  - Create an environment variable with name JWTSECRET and set its value (string).
+
+**4. Start the server**
+```bash
+npm run dev
+```
